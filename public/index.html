@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <canvas id="whiteboard" height="100vh" width="100vw">
+      Oh No!!! Canvas doses not seem to be supported by your current browser :(
+      Please update your browser!
+    </canvas>
+
+    <article>
+      <!--https://api.iconify.design/mdi:pen.svg?height=24-->
+      <img src="img/pen.svg" alt="pen" class="selected" id="pen">
+
+      <!--https://api.iconify.design/gg:erase.svg?height=24-->
+      <img src="img/erase.svg" alt="eraser" id="eraser">
+
+      <section id="colors">
+        <div class="color black"></div>
+        <div class="color blue hidden"></div>
+        <div class="color green hidden"></div>
+        <div class="color red hidden"></div>
+        <div class="color yellow hidden"></div>
+      </section>
+
+      <section id="thickness">
+        <div class="circle"></div>
+        <input type="range" min="1" max="100" value="50" class="slider hidden">
+      </section>
+    </article>
+  </body>
+</html>
